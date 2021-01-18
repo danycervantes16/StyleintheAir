@@ -6,6 +6,133 @@
     <title>Style in the Air</title>
 </head>
 <body>
-    
+    <!-- ir arriba -->
+    <div class="go-top">
+        <span id="link_nosotros"><i class="fas fa-angle-up"></i></span>
+    </div>
+    <!-- Social media  -->
+    <div class="social">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>  
+            <li><a href="https://api.whatsapp.com/send?phone=525541178087&text=Hola"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- menu de navegancion -->
+
+    <header id="header">
+        <nav class="menu">
+            <div class="logo-box">
+                <span class="burger-menu" id="burger-menu">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+
+            <ul class="menuOpcion" id="menuOpcion" value="1">
+                <li><a href="#link_productos">Productos</a></li>
+                <li><a href="./catalogo con grid.html">Comprar</a></li>
+                <li><a href="./catalogo con grid.html#link_testi">Opiniones</a></li>
+                <li><a href="#link_formulario">Contacto</a></li>
+            </ul>
+
+        </nav>
+        <!-- img header -->
+        <div class="img-header">
+            <div class="figure">
+                <div class="logo">
+                    <figure class="logo">
+                        <img  src="../src/Logo.png" alt="">
+                    </figure>
+                </div>    
+                <div class="logotipo">
+                    <figure class="logotipo">
+                        <img  src="../src/logotipo.png" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div class="welcomeSeccion">
+                <div class="spaceb"></div>
+                <div class="welcome">
+                    <h1>Bienvenidos artistas aereos</h1>
+                    <p>!Lo que mas amas, aquí lo encuentras¡</p>
+                    <a href="./catalogo con grid.html"><button class='abajo' id="abajo">Comprar ahora</button></a>
+                </div>
+            </div> 
+        </div>
+    </header>
+
+    <!-- Dinamica -->
+    <section class="dynamic">
+        <h2>Dinámica</h2>
+        <h3>¡Con solo 3 pasos, crea tu prenda!</h3>
+        <div class="steps">
+            <div class="step1">
+                <img class="imgStep" src="../src/Recurso 80.png" alt="">
+            </div>
+            <div class="step2">
+                <img class="imgStep" src="../src/Recurso 81.png" alt="">
+            </div>
+            <div class="step3">
+                <img class="imgStep" src="../src/Recurso 82.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section class="products">
+        <h2>Nuestros productos</h2>
+        <hr>
+        <div class="imgProducts">
+            <a href="./catalogo con grid.html"><img src="../src/Recurso 29.png" alt="Bueno que paso"></a>
+            <a href="./catalogo con grid.html"><img src="../src/Recurso 28.png" alt=""></a>
+            <a href="./catalogo con grid.html"><img src="../src/Recurso 30.png" alt=""></a>
+            <a href="./catalogo con grid.html"><img src="../src/Recurso 30.png" alt=""></a>
+            <a href="./catalogo con grid.html"><img src="../src/Recurso 29.png" alt=""></a>
+            <a href="./catalogo con grid.html"><img src="../src/Recurso 28.png" alt=""></a>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact">
+        <h2>Formulario de Contacto</h2>
+        <p>Si deseas un diseño especial</p>
+        <p> ¡Contactanos!</p>
+        <div class="containerForm" id="containerForm">
+            <form id="contactForm">
+                <label for="user1">Nombre Completo:</label>
+                <input type="text" id="user" name="fname" placeholder="Ingresa tu nombre completo">
+                <p id="idName"></p>
+              
+                <label>Teléfono: </label>
+                <input type="tel" name="fphone" placeholder="55-5555-5555" onkeydown="limit(this, 10);" onkeyup="limit(this, 10);">
+                <p id="idPhone"></p>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="femail" placeholder="Ingresa tu email">
+                <p id="idEmail"></p>
+
+                <label for="message">Escribe tu mensaje:</label>
+                <textarea name="message" id="message" cols="5" rows="5"></textarea>               
+                <div class="send">
+                    <input class="boton1" type="button" value="Enviar" id="submit" onclick="valida()">
+                </div>
+            </form> 
+            <div class="messageForm">
+                <p id="result"></p>
+            </div>  
+        </div>
+    </section>
+
+    <!-- Pie de pag -->
+    <footer>
+        <div class="footerText">
+            <p>&copy; DANZA AEREA | DERECHOS RESERVADOS |</p>
+            <a href="./TYC.html">TERMINOS Y CONDICIONES |</a>
+            <a href="./PRIVACIDAD.html">PRIVACIDAD</a>
+        </div> 
+    </footer>
+    <script src="https://kit.fontawesome.com/2be677bd11.js" crossorigin="anonymous"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/goTop.js"></script>    
 </body>
 </html>
