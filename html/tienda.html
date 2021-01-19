@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Playfair+Display:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
+    <script src="../js/movimiento.js"></script>
+    <title>Tienda</title>
+</head>
+<body>
+     <!-- ir arriba -->
+     <div class="go-top">
+        <span id="link_nosotros"><i class="fas fa-angle-up"></i></span>
+    </div>
+
+    <!-- Social media  -->
+    <div class="social">
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>  
+            <li><a href="https://api.whatsapp.com/send?phone=525541178087&text=Hola"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+
+    <!-- menu de navegancion -->
+    <header id="header">
+        <nav class="menu">
+            <div class="logo-box">
+                <span class="burgerMenu" id="burgerMenu">
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+
+            <ul class="menuOpcion" id="menuOpcion" value="1">
+                <li><a href="#link_productos">Productos</a></li>
+                <li><a href="./catalogo con grid.html">Comprar</a></li>
+                <li><a href="./catalogo con grid.html#link_testi">Opiniones</a></li>
+                <li><a href="#link_formulario">Contacto</a></li>
+            </ul>
+        </nav>
+    <!--Paso 1 elige tu producto -->
+    <div class="stepOne">
+        <h1>Crealo a tu estilo</h1>
+        <h2>Paso 1</h2>
+        <P>Elige tu producto</P>
+        <div class="product" id="product">
+            <img src="../src/Recurso 26.png" alt="" id="shirt">
+            <img src="../src/Recurso 26.png" alt="" id="jacket">
+            <img src="../src/Recurso 26.png" alt="" id="handbag">
+        </div>
+    </div>
+
+    <!-- Paso 2 elige el diseño  -->
+    <div class="stepTwo">
+        <h2>Paso 2 </h2>
+        <P>Elige tu diseño</P>
+        <div class="design" id="design">
+            <img src="../img/diseño1.jpg" alt="" id="design1">
+            <img src="../img/diseño2.jpg" alt="" id="design2">
+            <img src="../img/diseño3.jpg" alt="" id="design3">
+            <img src="../img/diseño4.jpg" alt="" id="design4">
+            <img src="../img/diseño5.jpg" alt="" id="design5">
+            <img src="../img/diseño6.jpg" alt="" id="design6">
+        </div>
+    </div>
+    <!--Paso 3 elige tu talla y color  -->
+    
+    <div class="stepThree">
+        <h2>Paso 3</h2>
+        <p>Elige talla y color</p>
+        <div class="size">
+            <button class="sizes" type="button" id="slim">S</button>
+            <button class="sizes" type="button" id="medium">M</button>
+            <button class="sizes" type="button" id="large">L</button>
+        </div>
+        <div class="color" id="color">
+            <button class="white" type="button" id="white"></button>
+            <button class="black" type="button" id="black"></button>
+            <button class="grey" type="button" id="grey"></button>
+        </div>
+    </div>
+
+    <!-- Visualización del producto final/ FALTA CONCLUIRLO  -->
+    <div class="ProductFinish">
+        <h2>Visualiza tu diseño</h2>
+        <h3>Tu diseño esta quedando cool</h3>
+        <div>
+
+        </div>
+    </div>   
+
+    <!-- Catalogo completo  -->
+    <div class="completeCatalogue">
+        <h2 class="suggestions">Sugerencias para ti</h2>
+        <figure class="left">
+            <img src="../src/Recurso 5.png" alt="iconoLeft" class="iconLeft" id="iconLeft">
+        </figure>
+        <section  id="galery" class="carousel">
+            <ul class="carouselContainer" id="carouselContainer">
+                <li class="carouselItem">
+                    <img src="../img/iteam1.jpg" alt="">
+                    <h3>Blusa roja</h3>
+                    <p>$300 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+
+                <li class="carouselItem">
+                    <img src="../img/iteam3.jpg" alt="">
+                    <h3>Blusa blanca</h3>
+                    <p>$300 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+
+                <li class="carouselItem">
+                    <img src="../img/iteam4.jpg" alt="">
+                    <h3>Sudarera mixta</h3>
+                    <p>$600 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+
+                <li class="carouselItem">
+                    <img src="../img/iteam5.jpg" alt="">
+                    <h3>Taza</h3>
+                    <p>$100 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+
+                <li class="carouselItem">
+                    <img src="../img/iteam6.jpg" alt="">
+                    <h3>Taza 2</h3>
+                    <p>$100 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+
+                <li class="carouselItem">
+                    <img src="../img/iteam7.jpg" alt="">
+                    <h3>Llavero</h3>
+                    <p>$100 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+
+                <!-- segunda parte -->
+                <li class="carouselItem">
+                    <img src="../img/iteam7.jpg" alt="">
+                    <h3>Llavero</h3>
+                    <p>$100 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam7.jpg" alt="">
+                    <h3>Llavero</h3>
+                    <p>$100 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam7.jpg" alt="">
+                    <h3>Llavero</h3>
+                    <p>$100 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam7.jpg" alt="">
+                    <h3>Llavero</h3>
+                    <p>$100 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam7.jpg" alt="">
+                    <h3>Llavero</h3>
+                    <p>$100 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam7.jpg" alt="">
+                    <h3>Llavero</h3>
+                    <p>$100 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+
+                <!-- tercer seccion -->
+                <li class="carouselItem">
+                    <img src="../img/iteam1.jpg" alt="">
+                    <h3>Blusa roja</h3>
+                    <p>$300 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam1.jpg" alt="">
+                    <h3>Blusa roja</h3>
+                    <p>$300 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam1.jpg" alt="">
+                    <h3>Blusa roja</h3>
+                    <p>$300 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam1.jpg" alt="">
+                    <h3>Blusa roja</h3>
+                    <p>$300 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam1.jpg" alt="">
+                    <h3>Blusa roja</h3>
+                    <p>$300 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+                <li class="carouselItem">
+                    <img src="../img/iteam1.jpg" alt="">
+                    <h3>Blusa roja</h3>
+                    <p>$300 MXN</p>
+                    <button id="down">Comprar ahora</button>
+                </li>
+            </ul>
+        </section>  
+        <figure class="right">
+            <img src="../src/Recurso 6.png" alt="iconoRight" class="iconRight" id="iconRight">
+        </figure>         
+    </div>
+    <!-- Opiniones -->
+    <div class="opinions">
+        <h2>Opiniones</h2>
+        <div class="opinionsContainer" id="opinionsContainer" >
+            <h2>Nuestros <b>Usuarios</h2>
+            <hr>
+            <ul class="slides" id="slides">
+                <li class="slide">
+                    <p>
+                        <q>Carent Miranda</q>
+                        <span class= "author">
+                            <img src="../img/icono_feliz.png" >
+                            La neta es que si me gusto pero siganle 
+                        </span>
+                    </p>
+                </li>
+    
+                <li class="slide">
+                    <p>
+                        <q>Usuario2 con experiencia.</q>
+                        <span class= "author">
+                            <img src="../img/icono_feliz.png">
+                            Cristiano Cedano que pedo 
+                        </span>
+                    </p>
+                </li>
+    
+                <li class="slide">
+                    <p>
+                        <q>Usuario3 con experiencia.</q>
+                        <span class= "author">
+                            <img src="../img/icono_feliz.png" alt="">
+                            Cristiano Cedano
+                        </span>
+                    </p>
+                </li>
+            </ul>
+            <div class="opinionButton">
+                <button class="opione" type="button" onclick="infiniteMovi('1')" id="1"></button>
+                <button class="opitow" type="button" onclick="infiniteMovi('2')" id="2"></button>
+                <button class="opithr" type="button" onclick="infiniteMovi('3')" id="3"></button>
+            </div>
+    </div>
+    <!-- Pie de pagina  -->
+    <footer>
+        <div class="footerText">
+            <p>&copy; DANZA AEREA | DERECHOS RESERVADOS |</p>
+            <a href="./TYC.html">TERMINOS Y CONDICIONES |</a>
+            <a href="./PRIVACIDAD.html">PRIVACIDAD</a>
+        </div> 
+    </footer>
+    <script src="https://kit.fontawesome.com/2be677bd11.js" crossorigin="anonymous"></script>
+    <script src="../js/burger.js"></script>
+    <script src="../js/goTop.js"></script>
+</body>
+</html>
