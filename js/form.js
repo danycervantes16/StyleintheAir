@@ -1,52 +1,35 @@
 function valida() {
-    var name1 = document.forms["formulario"]["fname"].value;
-    var surname1 = document.forms["formulario"]["fsurname"].value;
-    var phone1 = document.forms["formulario"]["fphone"].value;
-    var email1 = document.forms["formulario"]["femail"].value;
-    var error_name = validate_name(name1)
-    var error_surname = validate_surname(surname1)
-    var error_phone = validate_phone(phone1)
-    var error_email = validate_email(email1)
-    let suma = error_name + error_surname +  error_phone + error_email
+    var name1 = document.forms["contactForm"]["fname"].value;
+    var phone1 = document.forms["contactForm"]["fphone"].value;
+    var email1 = document.forms["contactForm"]["femail"].value;
+    var error_name = validateName(name1)
+    var error_email = validateEmail(email1)
+    var error_phone = validatePhone(phone1)
+    let suma = error_name +  error_phone + error_email
     if (suma == 0) {
-        document.getElementById("formulario").style.display = "none";
-        document.getElementById("formulario-content").style.height = "10%";
+        document.getElementById("contactForm").style.display = "none";
+        document.getElementById("containerForm").style.height = "10%";
         document.getElementById("result").innerHTML = "Gracias pronto te respondemos";
     } else {
         document.getElementById("result").innerHTML = "";
     }
 }
-function validate_name(str) {
+function validateName(str) {
     let error = 0;
     if (str == "") {
-        document.getElementById("id_Nombre").innerHTML = "*Ingresa tu nombre";
+        document.getElementById("idName").innerHTML = "*Ingresa tu nombre";
         error = 1;
     } else if (str != "") {
-        error = have_number(str);
+        error = hasNumber(str);
         if(error == 1){
-            document.getElementById("id_Nombre").innerHTML = "*Ingresa un nombre valido";
+            document.getElementById("idName").innerHTML = "*Ingresa un nombre valido";
         } else {
-            document.getElementById("id_Nombre").innerHTML = "";
+            document.getElementById("idName").innerHTML = "";
         }
     }
     return error;
 }
-function validate_surname(str) {
-    let error = 0;
-    if (str == "") {
-        document.getElementById("id_Apellido").innerHTML = "*Ingresa tu Apellido";
-        error = 1;
-    } else if (str != "") {
-        error = have_number(str);
-        if(error == 1){
-            document.getElementById("id_Apellido").innerHTML = "*Ingresa un tu apellido correctamente ";
-        } else {
-            document.getElementById("id_Apellido").innerHTML = "";
-        }
-    }
-    return error;
-}
-function have_number(str) {
+function hasNumber(str) {
     let i;
     let num = "0123456789";
     let err = 0;
@@ -61,22 +44,22 @@ function have_number(str) {
     }
     return err;
 }
-function validate_email(str) {
+function validateEmail(str) {
     let error = 0;
     if (str == "") {
-        document.getElementById("id_Correo").innerHTML = "*Ingresa tu correo";
+        document.getElementById("idEmail").innerHTML = "*Ingresa tu correo";
         error = 1;
     } else if (str != "") {
-        error = right_email(str);
+        error = rightEmail(str);
         if(error == 1){
-            document.getElementById("id_Correo").innerHTML = "*Ingresa un correo valido";
+            document.getElementById("idEmail").innerHTML = "*Ingresa un correo valido";
         } else {
-            document.getElementById("id_Correo").innerHTML = "";
+            document.getElementById("idEmail").innerHTML = "";
         }
     }
     return error;
 }
-function right_email(valor) {
+function rightEmail(valor) {
     let err=0;
     if (/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(valor)){
         err = 0
@@ -85,17 +68,17 @@ function right_email(valor) {
     }
     return err;
 }
-function validate_phone(str) {
+function validatePhone(str) {
     let error = 0;
     if (str == "") {
-        document.getElementById("id_Telefono").innerHTML = "*Ingresa tu teléfono";
+        document.getElementById("idPhone").innerHTML = "*Ingresa tu teléfono";
         error = 1;
     } else {
         if (str.length < 10 || str.length > 10 ) {
-            document.getElementById("id_Telefono").innerHTML = "*Ingresa tu teléfono a 10 dig";
+            document.getElementById("idPhone").innerHTML = "*Ingresa tu teléfono a 10 dig";
             error = 1;
         } else {
-            document.getElementById("id_Telefono").innerHTML = "";
+            document.getElementById("idPhone").innerHTML = "";
             error = 0;
         }
     }
