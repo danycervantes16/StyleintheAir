@@ -1,5 +1,5 @@
-const menu = document.querySelector('.list-container')
-const burgerBotton = document.querySelector('.burger-menu')
+const menu = document.querySelector('.menuOption')
+const burgerBotton = document.querySelector('.burgerMenu')
 burgerBotton.addEventListener('click',hideShow)
 function hideShow(){
     if (menu.classList.contains('is-active')){
