@@ -8,6 +8,11 @@
     --black: #1b262c;
 
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
 @font-face {
     font-family: "DISTRO";
     src: url(../ttf/DISTRO__.ttf)
@@ -16,7 +21,7 @@ body{
     background: var(--white);
     overflow-x: hidden;
     font-family: "DISTRO";
-    background: url(../src/Background\ 2.png);
+    /* background: url(../src/Background\ 2.png); */
     background-position: center;
     background-size: 100% auto;
     position: relative;
@@ -118,24 +123,31 @@ body{
 /* img header */
 .img-header{
     width: 100%;
-    height: 35rem;
+    height: auto;
+    background: url(../src/Background2P1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
 }
 .img-header .figure{
-    width: 50%;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-around;
     margin: auto;
 }
-.img-header .figure .logo img{
-    width: 30%;
-    margin-top:10rem;
-    height: auto;
+.img-header .figure .logoFigure, .logotipoFigure{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
 }
-.img-header .figure .logotipo img{
-    width: 30%;
-    margin-top:8rem;
-    height: auto;
-}
+.img-header .figure .logoFigure img{
+    width: 25%;
+    margin-top: 4rem;
+    }
+.img-header .figure .logotipoFigure img{
+    width: 25%;
+    margin-top: 2rem;
+    }
 .img-header .welcomeSeccion{
     width: 100%;
     display: flex;
@@ -165,7 +177,6 @@ body{
     font-size:1.25rem;
     color: var(--azulf);
     font-weight: 900;
-    margin-top: -1.5rem;
     text-align:right;
 }
 .img-header .welcome a >button{
@@ -192,6 +203,10 @@ body{
     width: 100%;
     padding: 2.5rem;
     margin-top: 16rem;
+    background: url(../src/BackgroundP2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
 }
 .dynamic .steps{
     width: 100%;
