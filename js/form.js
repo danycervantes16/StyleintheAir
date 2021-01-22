@@ -8,8 +8,8 @@ function valida() {
     let suma = error_name +  error_phone + error_email
     if (suma == 0) {
         document.getElementById("contactForm").style.display = "none";
-        document.getElementById("containerForm").style.height = "10%";
         document.getElementById("result").innerHTML = "Gracias pronto te respondemos";
+        document.getElementById("containerForm").style.background = "#aacdda";
     } else {
         document.getElementById("result").innerHTML = "";
     }
