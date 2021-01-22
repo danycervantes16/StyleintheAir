@@ -21,9 +21,9 @@ body{
     background: var(--white);
     overflow-x: hidden;
     font-family: "DISTRO";
-    /* background: url(../src/Background\ 2.png); */
+    background: url(../src/Background2_2.png);
     background-position: center;
-    background-size: 100% auto;
+    background-size: 105% 98%;
     position: relative;
     background-repeat: no-repeat;   
 }
@@ -124,9 +124,9 @@ body{
 .img-header{
     width: 100%;
     height: auto;
-    background: url(../src/Background2P1.png);
+    /* background: url(../src/Background2P1.png);
     background-repeat: no-repeat;
-    background-size: 100% 150%;
+    background-size: 100% 150%; */
 }
 .img-header .figure{
     width: 100%;
@@ -172,6 +172,7 @@ body{
     color: var(--black);
     font-weight: 800;
     text-align: center;
+    margin-top: 2.3rem;
 }
 .img-header .welcome p{
     font-size:1.25rem;
@@ -202,19 +203,11 @@ body{
 .dynamic{
     width: 100%;
     padding: 2.5rem;
-    margin-top: 16rem;
-    background: url(../src/BackgroundP2.jpg);
+    /* background: url(../src/BackgroundP2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 80%;
-}
-.dynamic .steps{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border:none;
+    background-position: 100%; */
+
 }
 .dynamic h2{
     font-size: 2.5rem;
@@ -230,34 +223,40 @@ body{
     margin-top: 1.5rem;
     font-weight: 200;
 }
-.dynamic .steps .step1{
-    position: absolute;
+.dynamic .steps{
     width: 100%;
-    height: 95%;
-    align-items: center;
-    border: none;
-    transition: 500ms;
-    cursor: pointer;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    border:none;
+    /* flex-wrap:wrap; */
 }
-.dynamic .steps .step2{
-    position: absolute;
+.dynamic .steps .step1 img{
     width: 80%;
-    height: 75%;
-    align-items: center;
+    height:auto;
     border: none;
     transition: 500ms;
-    cursor: pointer;
-    left: 150px;
-    bottom: 1px;
+    cursor: pointer;   
+    display: flex;
+    margin: auto;
 }
-.dynamic .steps .step3{
-    width: 45%;
-    margin-bottom: 1.25rem;
-    margin-left: 5.5rem;
-    border-radius: 50%;
-    align-items: center;
-    cursor: pointer;
+.dynamic .steps .step2 img{
+    width: 80%;
+    height:auto;
+    border: none;
     transition: 500ms;
+    cursor: pointer;   
+    display: flex;
+    margin: auto;
+}
+.dynamic .steps .step3 img{
+    width: 80%;
+    height:auto;
+    border: none;
+    transition: 500ms;
+    cursor: pointer;   
+    display: flex;
+    margin: auto;
 }
 
 /* Productos */
@@ -278,14 +277,6 @@ body{
     margin:auto;
     margin-top:1rem;
 } 
-.products .imgProducts hr{
-    width: 100%;
-    height: 0.188rem;
-    background: var(--black1);
-    border: none;
-    margin-top:0.31rem;
-    margin-left: .25rem;
-}
 .products .imgProducts{
     width: 100%;
     display: flex;
@@ -296,16 +287,15 @@ body{
 }
 .products .imgProducts a{
     width: calc(30% - .62rem);
-    margin:.62rem;
-    object-fit:cover;
-    border-radius: .62rem;
+    border-radius: 10%;
     cursor:pointer;
+    display: flex;
+    justify-content: center;
 }
 .products .imgProducts img {
-    width: calc(100% - 10px);
-    margin:.62rem;
-    object-fit:cover;
+    width: calc(80% - 1rem);
     border-radius: .62rem;
+    margin:1.2rem;
     cursor:pointer;
     background: white;
     box-shadow: 0px 0px 10px  black;
@@ -319,14 +309,14 @@ body{
 .contact h2{
     text-align: center;
     color: var(--black);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight:800;
     margin-bottom:.62rem;
 }
 .contact p{
     text-align: center;
     color: var(--black1);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-top: .80rem;
     margin-bottom:-.8rem;
 }
@@ -339,18 +329,18 @@ body{
     margin: 3rem auto;
     padding: 1.87rem;
 }
-.contact  .containerForm #formulario{
+.contact  .containerForm #contactForm{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.contact  .containerForm #formulario label{
+.contact  .containerForm #contactForm label{
     text-align: center;
     color: var(--black);
     font-size: 1.37rem;
     margin: .62rem 0rem .12rem 0rem;
 }
-.contact  .containerForm #formulario input{
+.contact  .containerForm #contactForm input{
     width: 75%;
     height: 2.5rem;
     margin:auto;
@@ -362,14 +352,14 @@ body{
     color: var(--black);
     margin-bottom: -.62rem;
 }
-.contact  .containerForm #formulario p{
+.contact  .containerForm #contactForm p{
     text-align: center;
     color: var(--black);
     font-size: .62rem;
     color: red;
     margin: .93rem 0rem .31rem 0rem;
 }
-.contact  .containerForm #formulario textarea{
+.contact  .containerForm #contactForm textarea{
     width: 75%;
     height: 5rem;
     margin: auto;
@@ -380,12 +370,12 @@ body{
     color: var(--black);
     padding: 1.25rem;
 }
-.contact  .containerForm #formulario .send {
+.contact  .containerForm #contactForm .send {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.contact  .containerForm #formulario .send .boton1{
+.contact  .containerForm #contactForm .send .boton1{
     width: 7.5rem;
     height: 2.5rem;
     background: var(--black1);
@@ -398,7 +388,7 @@ body{
     cursor: pointer;
     transition: 0.5s;
 }
-.contact  .containerForm #formulario .send .boton1{
+.contact  .containerForm #contactForm .send .boton1{
     background:white;
     color: var(--morado);
     font-family: "DISTRO";
