@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas:    "header header header"
+                            "one one view"
+                            "two two view"
+                            "three three view"
+                            "footer footer footer";
+}
+.header {
+    grid-area: header;
+    line-height: 0.8cm;
+    /* display: flex; */
+    text-align: center;
+}
+.one {
+    grid-area: one;
+    display: flex;
+    justify-content: center;
+}
+.two {
+    grid-area: two;
+    display: flex;
+    justify-content: center;
+}
+.three {
+    grid-area: three;
+    display: flex;
+    justify-content: center;
+}
+.step1, .step2, .step3 {
+    width: 50%;
+}
+.imgStep1, .imgStep2, .imgStep3{
+    width: 80%;
+    height: auto;
+}
+.view {
+    grid-area: view;
+    display: flex;
+    justify-content: center;
+}
+.viewFig {
+    width: 50%;
+}
+.imgview {
+    width: 80%;
+    height: auto;
+    margin-top: 4rem;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 4rem;
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+    line-height: 0.8cm;
+}
