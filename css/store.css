@@ -1,0 +1,132 @@
+:root{
+    --morado: #664177;
+    --rosa: #c468a2;
+    --rosac:#edc9d3;
+    --azul:#00CBD4;
+    --azulc: #aacdda;
+    --azulf: #0197ba;
+    --black: #1b262c;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+@font-face {
+    font-family: "DISTRO";
+    src: url(../ttf/DISTRO__.ttf)
+}
+body{
+    background: var(--white);
+    overflow-x: hidden;
+    font-family: "DISTRO";
+    background: url(../src/Background2_2.png);
+    background-position: center;
+    background-size: 105% 98%;
+    position: relative;
+    background-repeat: no-repeat;   
+}
+/* go top */
+.go-top {
+    position:fixed;
+    bottom: 6.25rem;
+    right: 0;
+    width: 3.1rem;
+    height: 3.1rem;
+    border: .125rem solid var(--black);
+    border-radius: 50%;
+    background: var(--white);
+    z-index: 9999;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 400ms;
+}
+.go-top:hover{
+    border: 0.12rem solid var(--black);
+    background: var(--black1);
+}
+.go-top:hover span{
+    color: var(--black);
+}
+.go-top > span{
+    font-size: 1.86rem;
+    color: var(--black);
+}
+#header{
+    position: relative;
+    width: 100%;
+}
+
+/* Menu */
+.menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 3.7rem;
+    background-image: linear-gradient( 110deg, #664177, #aacdda, #edc9d3 , #c468a2 );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+}
+.menu .logo-box{
+    margin-left: 1.25rem;
+    display: none;
+}
+.menu .logo-box a{
+    text-decoration: none;
+    font-size: 1.86rem;
+    font-weight: 800;
+    color: var(--black); 
+}
+.menu .burger-menu {
+    display: none;
+}
+.menu .menuOpcion{
+    margin: auto;
+    display: flex;
+}
+.menu .menuOpcion li{
+    list-style: none;
+}
+.menu .menuOpcion a{
+    text-decoration: none;
+    margin:0rem 3rem;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+    transition: 0.3s;
+}
+.menu .menuOpcion a.activo{
+    background: var(--black);
+    color:#fff;
+}
+.menu .list-container .lists li a:hover{
+    background: white;
+    color:var(--rosa);
+}
+.burger-menu > .fab-bars{
+    display: none;
+}
+.menu .btn-menu{
+    display: none;
+}
+.steps{
+    width: 100%;
+    margin: 1.5rem 0px 0px 0px;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(3 , 1fr) ; /*para indicar cuantas col. se necesita */
+    grid-template-rows: repeat(3, auto);
+
+    grid-template-areas: "stepOne stepOne deliveryProduct"
+                         " stepTwo stepTwo deliveryProduct"
+                         " stepThree stepThree deliveryProduct";
+}
